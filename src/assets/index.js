@@ -19,7 +19,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import millat from "./company/millat.png";
+import millat from "./company/Millat.png";
 import rpn from "./company/rpn.png";
 import sassytech from "./company/SaSystems.png";
 import scaylar from "./company/scaylar.png";
