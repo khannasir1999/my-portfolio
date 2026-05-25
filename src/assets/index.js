@@ -20,7 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import millat from "./company/Millat.png";
-import rpn from "./company/rpn.png";
+import rpn from "./company/RPN.png";
 import sassytech from "./company/SaSystems.png";
 import scaylar from "./company/scaylar.png";
 import asecure from "./asecure cloud.png";
