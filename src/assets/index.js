@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -20,23 +19,22 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
+import millat from "./company/millat.png";
+import rpn from "./company/rpn.png";
+import sassytech from "./company/SaSystems.png";
+import scaylar from "./company/scaylar.png";
+import asecure from "./asecure cloud.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import chainlink from "./Chain_link_icon.png";
+import pamperpro from "./pamperpro.png";
+import rpnImg from "./rpn.png";
 export {
   logo,
   backend,
   creator,
   mobile,
   web,
-  github,
   menu,
   close,
   css,
@@ -52,11 +50,14 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
   jobit,
   tripguide,
+  millat,
+  rpn,
+  sassytech,
+  scaylar,
+  asecure,
+  chainlink,
+  pamperpro,
+  rpnImg
 };

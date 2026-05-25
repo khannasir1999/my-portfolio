@@ -15,14 +15,15 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
   jobit,
   tripguide,
-  threejs,
+  millat,
+  sassytech,
+  scaylar,
+  rpn,
+  asecure,
+  pamperpro,
+  rpnImg
 } from "../assets";
 
 export const navLinks = [
@@ -42,21 +43,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Senior Software Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "AI/LLM Integrations",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AWS Solutions",
     icon: creator,
-  },
+  }
 ];
 
 const technologies = [
@@ -97,10 +98,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -116,55 +113,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Summer Intern/Frontend Developer",
+    company_name: "Millat Tractors",
+    icon: millat,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2021 - August 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on the frontend of the website using React.js and other related technologies.",
+      "learnt best coding practices. ",
+      "Collaborated with the backend team to integrate the frontend with the backend.",
+      "Implemented responsive design and ensured cross-browser compatibility.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Associate Software Engineer",
+    company_name: "SA Systems",
+    icon: sassytech,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2022 - Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built ERP modules using Laravel and Vue.js integrated with SQL databases.",
+      "Developed API-driven features for seamless business operations.",
+      "Independently developed Assets & Depreciation and Club & Members Management modules.",
+      "Built a React + Express SPA for displaying real-time property availability in Pakistan.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Senior Software Engineer",
+    company_name: "Scaylar Technologies",
+    icon: scaylar,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Aug 2023 - July 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Lead developer on the Asecure Clouds platform for nearly 2 years.",
+      "Built serverless AWS components including Lambda, AppSync (GraphQL), API Gateway, DynamoDB, and S3.",
+      "Designed microservices and event-driven architectures to improve scalability and release velocity.",
+      "Mentored junior developers through code reviews, onboarding documentation, and pair programming.",
+      "Built large-scale web scrapers using Zembra and DataForSEO APIs.",
+      "Contributed to building an AI voice generation platform using ElevenLabs for Accelerado.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Senior Software Engineer",
+    company_name: "RedPanda Network",
+    icon: rpn,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Oct 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Working on a MERN-stack web application with focus on scalability, performance optimization, and clean architecture.",
+      "Developing and maintaining the production project Pamper Pro.",
+      "Leading role in designing and implementing the Node.js backend for the ForEveryYoung mobile application, including API architecture and integrations.",
+      "Collaborating with cross-functional teams, conducting code reviews, and enforcing backend best practices.",
     ],
   },
 ];
@@ -198,68 +197,128 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Asecure Cloud",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI Powered Cloud Security & Operations Platform. Everything you need to build, secure, and operate cloud environments across AWS, Azure, and GCP.",
     tags: [
       {
-        name: "react",
+        name: "React.js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "AWS Services",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Redux Toolkit",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: asecure,
+    source_code_link: "https://asecure.cloud/",
   },
   {
-    name: "Job IT",
+    name: "BitCompare",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Compare Crypto and Stablecoin Interest Rates. Find the best crypto and stablecoin lending rates, staking rewards, and loan APR across top platforms.",
     tags: [
       {
-        name: "react",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Hasura",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Postgres",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Stripe.js",
+        color: "text-yellow-500",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://bitcompare.net/",
   },
   {
-    name: "Trip Guide",
+    name: "Accelerado",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Automated AI-powered calls and texts help your business respond 24/7, follow up instantly, and turn inquiries into booked appointments.",
     tags: [
       {
-        name: "nextjs",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Nest.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Postgres",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://accelerado.ai/",
+  },
+];
+const projectsIamCurrentlyWorkingOn = [
+  {
+    name: "Pamper Pro",
+    description:
+      "A marketplace platform connecting clients with freelance wellness professionals for on-demand wellbeing services, delivered directly to their doorstep.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Persona",
+        color: "text-yellow-500",
+      },
+      {
+        name: "Stripe.js",
+        color: "text-green-500",
+      },
+    ],
+    image: pamperpro,
+    source_code_link: "https://pamper-pro-fe.vercel.app/",
+  },
+  {
+    name: "Red Panda Network",
+    description:
+      "portfolio website for Red Panda Network, a software development company, built using React.js, Framer Motion, Tailwind CSS, and GSAP.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "text-yellow-500",
+      }
+    ],
+    image: rpnImg,
+    source_code_link: "https://redpanda-web.vercel.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, projectsIamCurrentlyWorkingOn };

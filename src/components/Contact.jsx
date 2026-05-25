@@ -27,41 +27,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Nasir",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "mnasirhussain163@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
       );
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Ahh, something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -117,9 +111,19 @@ const Contact = () => {
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            disabled={!form.name || !form.email || !form.message}
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? "Sending..." : "Send"} 
           </button>
+          <p className='text-white text-sm mt-2'>
+            If the form is not working, please contact me at{" "}
+            <a
+              href='mailto:mnasirhussain163@gmail.com'
+              className='text-secondary underline hover:text-white transition-colors'
+            >
+              mnasirhussain163@gmail.com
+            </a>
+          </p>
         </form>
       </motion.div>
 
