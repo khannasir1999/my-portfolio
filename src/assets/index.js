@@ -29,6 +29,7 @@ import tripguide from "./tripguide.png";
 import chainlink from "./Chain_link_icon.png";
 import pamperpro from "./pamperpro.png";
 import rpnImg from "./rpn.png";
+import TDL from "./TDL.png";
 export {
   logo,
   backend,
@@ -59,5 +60,6 @@ export {
   asecure,
   chainlink,
   pamperpro,
-  rpnImg
+  rpnImg,
+  TDL
 };

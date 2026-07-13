@@ -23,7 +23,8 @@ import {
   rpn,
   asecure,
   pamperpro,
-  rpnImg
+  rpnImg,
+  TDL
 } from "../assets";
 
 export const navLinks = [
@@ -263,6 +264,31 @@ const projects = [
     image: tripguide,
     source_code_link: "https://accelerado.ai/",
   },
+  {
+    name: "Red Panda Network",
+    description:
+      "portfolio website for Red Panda Network, a software development company, built using React.js, Framer Motion, Tailwind CSS, and GSAP.",
+    tags: [
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "text-yellow-500",
+      }
+    ],
+    image: rpnImg,
+    source_code_link: "https://redpanda.network/",
+  }
 ];
 const projectsIamCurrentlyWorkingOn = [
   {
@@ -295,16 +321,16 @@ const projectsIamCurrentlyWorkingOn = [
     source_code_link: "https://pamper-pro-fe.vercel.app/",
   },
   {
-    name: "Red Panda Network",
+    name: "The Design Log",
     description:
-      "portfolio website for Red Panda Network, a software development company, built using React.js, Framer Motion, Tailwind CSS, and GSAP.",
+      "portfolio website for The Design Log, a design company, built using Next.js, Framer Motion, Tailwind, HTML, CSS, Bootstrap and GSAP.",
     tags: [
       {
-        name: "React.js",
-        color: "blue-text-gradient",
+        name: "Next.js",
+        color: "blue-text-gradient",  
       },
       {
-        name: "Framer Motion",
+        name: "Motion",
         color: "green-text-gradient",
       },
       {
@@ -316,9 +342,10 @@ const projectsIamCurrentlyWorkingOn = [
         color: "text-yellow-500",
       }
     ],
-    image: rpnImg,
-    source_code_link: "https://redpanda-web.vercel.app/",
-  },
+    image: TDL,
+    source_code_link: "https://tdl-website.vercel.app/",
+  }
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects, projectsIamCurrentlyWorkingOn };
